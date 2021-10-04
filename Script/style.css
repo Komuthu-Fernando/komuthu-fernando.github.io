@@ -1,0 +1,464 @@
+:root {
+    --menufont: 'Raleway', sans-serif;
+    --mainfont: 'Montserrat', sans-serif;
+    --introfont: 'Ubuntu', sans-serif;
+    --orange: #ff4800;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+	width: 0rem;
+	height: 0.2em;
+	background-color: transparent;
+}
+/* Track */
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: transparent;
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #666666;
+}
+
+#myBtn {
+    width: 3rem;
+    height: 3rem;
+    box-shadow: 2px 2px 10px #000000, -2px -2px 10px #1d1d1d;
+    display: none;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 9999;
+    font-size: 1.5rem;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: var(--orange);
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+header  {
+    display: grid;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(5px); 
+    
+    
+}
+
+.menu .message {
+    text-align: center;
+    color: white;
+    font-family: var(--menufont);
+    letter-spacing: 1.5rem;
+    padding-top: 1.5rem;
+    
+    
+   
+
+}
+
+.menu .navbar {
+    padding-top: 1.8rem;
+    
+
+}
+
+.navbar ul{
+    display: grid;
+    list-style-type:none;
+    text-align: left;
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: var(--mainfont); 
+    font-weight: bold;
+    grid-template-columns: 1.6fr 0.25fr 0.25fr 0.25fr 0.25fr 0.4fr;
+    min-height: 5.5vh;
+
+   
+}
+
+.navbar a:hover {
+    
+    color: var(--orange);
+}
+
+.navbar a:active {
+    
+    color: var(--orange);
+}
+/*.navbar a:hover {
+    color: #fe4900;
+    
+    box-shadow: 0 0 10px #ff6600, 0 0 40px #ff6600, 0 0 80px #ff6600;
+}
+
+*/
+
+a span {
+    position: absolute;
+    display: block;
+
+}
+
+a span:nth-child(1) {
+    top:0;
+    left: -100%;
+    width: 100%;
+    height: 0.2vh;
+    background: linear-gradient(90deg,transparent,var(--orange));
+}
+
+a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+
+.navbar li {
+    text-align: center;
+    padding-top: 0.4rem;
+}
+.navbar a {
+    font-size: 1.0rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    
+}
+
+.social1 {
+    color: var(--orange);
+    font-size: 22px;
+
+}
+
+.social1:hover {
+    color:white;
+}
+
+.social {
+    color: white;
+    font-size: 1.3rem;
+
+}
+
+.social:hover {
+    color:var(--orange);
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 0.3fr 2.3fr 1.5fr ;
+    grid-template-areas: 
+        "sidebar content image";
+}
+
+
+.intro .sidebar ul {
+    padding-top: 27.8vh;
+    position: fixed;
+}
+
+.hi {
+    width: 13vw; 
+    height: 13.2vh;
+    padding-top: 19.8vh;
+    padding-left: 6.6vh;
+}
+
+.content {
+    grid-area: content;
+
+}
+
+.content a {
+    text-decoration: none;
+}
+
+.intro .content h1 {
+    color: white;
+    font-family: var(--introfont);
+    font-weight: bold;
+    font-size: 5rem;
+    padding-left: 6.6vh;
+    margin: 0;
+    padding-top: 1.9vh;
+}
+
+.intro .content p {
+    display: block;
+    font-family: var(--mainfont);
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: normal;
+    padding-top: 2.6vh;
+    color: white;
+    padding-left: 2.6vh;
+    margin: 0;
+    padding-top:  3.9vh;
+    line-height: 3.7vh;
+    
+}
+
+.intro .image img {
+    padding-top: 12vh;
+    width: 32.5vw;
+    height: 59.6vh;
+    
+}
+.intro .content .cul {
+    text-align: center;
+    
+}
+
+.intro .content a {
+    font-size: 1.3rem;
+}
+
+.intro .content ul li {
+    display: inline;
+    color:white;
+    padding: 0.8rem;
+    
+}
+
+
+.web-content {
+    display: grid;
+    max-width: 1024px;
+    margin: auto;
+}
+
+
+
+.web-content p.topic {
+    color: white;
+    font-family: var(--mainfont);
+    text-align: center;
+    margin-block-start: 3rem;
+    font-size: 3rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-top: 200px;
+    letter-spacing: 5px;
+}
+
+.web-content p.subtopic {
+    color: white;
+    font-family: var(--mainfont);
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.web-content .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 4rem;
+
+}
+
+.card {
+    flex: 0 0  ;
+    min-width: 20rem;
+    margin: 1rem;
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+                inset -5px -5px 5px rgba(255, 255, 255, 0.2),
+                5px 5px 5px rgba(0, 0, 0, 0.2),
+                -5px -5px 5px rgba(255, 255, 255, 0.2);
+                
+}
+
+.card:hover {
+    background: #2a2b2f;
+}
+
+.card:hover .icon {
+    color: #fa7844;
+}
+
+.card .cheader {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 1rem;
+    color: white;
+    font-family: var(--mainfont);
+    font-size: 1.3rem;
+}
+
+.card .cardname {
+    color: var(--orange);
+    font-weight: bold;
+}
+
+.card .subcardname {
+    color: #008B8B;
+    font-size: 0.75rem;
+    padding-top: 4px;
+    margin: 0.2rem;
+}
+
+.card .icon {
+    text-align: right;
+    font-size: 2.5rem;
+}
+
+.card main {
+    color: white;
+    font-family: var(--mainfont);
+    font-size: 0.8rem;
+    padding:1rem;
+}
+
+.card footer {
+    padding: 1rem;
+}
+
+.contact {
+    display: grid;
+
+}
+
+.contact .contact-content .p {
+    color: white;
+    font-family: var(--mainfont);
+    text-align: center;
+    margin-block-start: 3rem;
+    font-size: 3rem;
+    font-weight: lighter;
+    text-transform: uppercase;
+    margin-top: 200px;
+    letter-spacing: 5px;
+
+}
+
+.contact .contact-content .p1 {
+    color: white;
+    font-family: var(--mainfont);
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 28px;
+}
+
+.contact .contact-content .cul {
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+.contact .contact-content ul li {
+    display: inline;
+    color:white;
+    padding: 0.8rem;
+}
+
+.contact .contact-content a {
+    text-decoration: none;
+}
+.contact .form {
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.contact .form .form-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    max-width: 1024px;
+    margin: auto;
+    padding-top: 3rem;
+}
+
+.contact .form .form-div #textbox {
+    grid-column: span 2;
+}
+
+.input-box {
+    display: grid;
+    font-family: var(--mainfont);
+    font-size: 0.2rem;
+}
+
+.input-box span {
+    margin: 0.8rem;
+    text-align: left;
+    color: white;
+    font-family: var(--mainfont);
+    font-size: 1.2rem;
+}
+
+input, textarea {
+    background-color: rgba(150, 150, 150, 0.15);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    margin: .5rem;
+    border: 0;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 15px;
+    border-radius: 1rem;
+    font-family: var(--mainfont);
+    color: var(--orange);
+}
+
+textarea.contact-message {
+    height: 15rem;
+}
+
+input[type="button"], input[type="submit"] {
+    cursor: pointer;
+    font-family: inherit;
+    -webkit-appearance: none;
+    border-radius: 1rem;
+    color: var(--orange);
+    font-family: var(--mainfont);
+}
+
+input[type="button"], input[type="submit"]:hover {
+    background-color: var(--orange);
+    color: white;
+}
+
+input:focus {
+    background-color: rgba(150, 150, 150, 0.26);
+}
+
+textarea:focus {
+    background-color: rgba(150, 150, 150, 0.26);
+}
+
+footer.page {
+    position: relative;
+    font-family: var(--menufont);
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    vertical-align:baseline;
+    height: 5vh;
+    margin-top: 3vh;
+    letter-spacing: 0.1rem;
+    color: white;
+}
