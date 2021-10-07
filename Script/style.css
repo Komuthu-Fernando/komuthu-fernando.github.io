@@ -463,3 +463,55 @@ footer.page {
     letter-spacing: 0.1rem;
     color: white;
 }
+
+@media only screen and (max-width: 480px)  {
+
+    header  {
+        display: grid;
+        position: sticky;
+        top: 0;
+        backdrop-filter: blur(5px); 
+        
+        
+    }
+    
+    .menu .message {
+        text-align: center;
+        color: rgb(88, 211, 31);
+        font-family: var(--menufont);
+        letter-spacing: 1.5rem;
+        padding-top: 1.5rem;
+        font-size: 0.5rem;
+    }
+    
+    .menu .navbar {
+        padding-top: 1.8rem;
+        
+    
+    }
+    
+    .navbar ul{
+        display: grid;
+        list-style-type:none;
+        text-align: left;
+        margin: 0;
+        font-size: 1.2rem;
+        font-family: var(--mainfont); 
+        font-weight: bold;
+        grid-template-columns: 1.6fr 0.25fr 0.25fr 0.25fr 0.25fr 0.4fr;
+        min-height: 5.5vh;
+    
+       
+    }
+    
+    .navbar a:hover {
+        
+        color: var(--orange);
+    }
+    
+    .navbar a:active {
+        
+        color: var(--orange);
+    }
+    
+}
