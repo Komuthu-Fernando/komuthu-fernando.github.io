@@ -1,6 +1,12 @@
 <html>
     <head>
         <title>Komuthu Fernando</title>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_LeKFRL5ZavTE2v1WqPsFF");
+})();
+</script>
         <link rel="stylesheet" href="Script/style.css">
         <link href="Script/background_styles.css" rel="stylesheet">
         <link rel="icon" href="./img/boy.png">
@@ -229,21 +235,42 @@
                         <div class="form-div"> 
                             <div class="input-box"> 
                                 <span>Email</span>
-                                <input type="email" placeholder="Enter your email" name="email" required >
+                                <input type="email" id="femail" placeholder="Enter your email" name="email" required >
                             </div>
                             <div class="input-box"> 
                                 <span>Name</span>
-                                <input type="text" placeholder="Enter your name" name="name" required >
+                                <input type="text" id="fname" placeholder="Enter your name" name="name" required >
                             </div>
                             <div class="input-box" id="textbox"> 
                                 <span>Message</span>
                                 <textarea class="contact-message" placeholder="Your message" name="message" required></textarea>    
                             </div>
-                            <input type="submit" name="submit" value="Send">
+                            <input id="fsubmit" type="submit" name="submit" value="Send">
                         </div>
                     </form>
                 </div> 
             </section>
+            <script>
+                const button = document.querySelector("#fsubmit");
+                button.addEventListener("click",(e)=>{
+                    e.preventDefault();
+                    const name=document.getElementById("fname");
+                    const email=document.getElementById("femail");
+                    const message=document.getElementById("textbox");
+                    var templateParams = {
+                        f_name: fname,
+                        f_email: femail,
+                        message: message,
+                    };
+ 
+                    emailjs.send('service_9t6oyyz', 'template_4dwqao5', templateParams)
+                    .then(function(response) {
+                        console.log('SUCCESS!', response.status, response.text);
+                    }, function(error) {
+                    console.log('FAILED...', error);
+                    });
+                });
+            </script>
             <footer class="page" style="display: block;"> 
                 <div>© KOMUTHU FERNANDO | ALL RIGHTS RESERVED</div>
             </footer>
