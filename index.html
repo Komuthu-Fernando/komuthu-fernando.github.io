@@ -254,12 +254,12 @@ emailjs.init("user_LeKFRL5ZavTE2v1WqPsFF");
                 const button = document.querySelector("#fsubmit");
                 button.addEventListener("click",(e)=>{
                     e.preventDefault();
-                    const name=document.getElementById("fname");
-                    const email=document.getElementById("femail");
-                    const message=document.getElementById("textbox");
+                    const name=document.getElementById("fname").value;
+                    const email=document.getElementById("femail").value;
+                    const message=document.getElementById("textbox").innerHTML;
                     var templateParams = {
-                        f_name: fname,
-                        f_email: femail,
+                        from_name: name,
+                        from_email: femail,
                         message: message,
                     };
  
