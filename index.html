@@ -243,7 +243,7 @@ emailjs.init("user_LeKFRL5ZavTE2v1WqPsFF");
                             </div>
                             <div class="input-box" id="textbox"> 
                                 <span>Message</span>
-                                <textarea class="contact-message" placeholder="Your message" name="message" required></textarea>    
+                                <textarea class="contact-message" id="message" placeholder="Your message" name="message" required></textarea>    
                             </div>
                             <input id="fsubmit" type="submit" name="submit" value="Send">
                         </div>
@@ -256,7 +256,7 @@ emailjs.init("user_LeKFRL5ZavTE2v1WqPsFF");
                     e.preventDefault();
                     const name=document.getElementById("fname").value;
                     const email=document.getElementById("femail").value;
-                    const message=document.getElementById("textbox").innerHTML;
+                    const message=document.getElementById("message").innerHTML;
                     var templateParams = {
                         from_name: name,
                         from_email: femail,
