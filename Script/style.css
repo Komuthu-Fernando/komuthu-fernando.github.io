@@ -9,6 +9,15 @@
 html {
     scroll-behavior: smooth;
 }
+
+body {
+    background-color: black; 
+    background-position: center;
+    background-size: auto;
+    
+}
+
+
 ::-webkit-scrollbar {
 	width: 0rem;
 	height: 0.2em;
@@ -66,10 +75,6 @@ header  {
     font-family: var(--menufont);
     letter-spacing: 1.5rem;
     padding-top: 1.5rem;
-    
-    
-   
-
 }
 
 .menu .navbar {
@@ -198,6 +203,10 @@ a:hover span:nth-child(1) {
     padding-left: 6.6vh;
     margin: 0;
     padding-top: 1.9vh;
+}
+
+.intro .content #phonepic {
+    display: none;
 }
 
 .intro .content p {
@@ -464,32 +473,22 @@ footer.page {
     color: white;
 }
 
-@media only screen and (max-width: 480px)  {
+@media only screen and (max-width: 992px) {
 
-    header  {
-        display: grid;
-        position: sticky;
-        top: 0;
-        backdrop-filter: blur(5px); 
-        
-        
-    }
-    
     .menu .message {
+        font-size: 0.8rem;
+        line-height: 5vh;
+        margin: 0;
+        padding: 0;
+        display:inline;
         text-align: center;
-        color: rgb(88, 211, 31);
-        font-family: var(--menufont);
-        letter-spacing: 1.5rem;
+    }
+
+    .menu .navbar{
         padding-top: 1.5rem;
-        font-size: 0.5rem;
-    }
-    
-    .menu .navbar {
-        padding-top: 1.8rem;
         
-    
     }
-    
+
     .navbar ul{
         display: grid;
         list-style-type:none;
@@ -498,20 +497,84 @@ footer.page {
         font-size: 1.2rem;
         font-family: var(--mainfont); 
         font-weight: bold;
-        grid-template-columns: 1.6fr 0.25fr 0.25fr 0.25fr 0.25fr 0.4fr;
-        min-height: 5.5vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        min-height: 5vh;
     
        
     }
-    
-    .navbar a:hover {
+
+    #blank{
+        display: none;
+    }
+
+    .navbar ul li {
+        text-align: center;
         
-        color: var(--orange);
+    }
+
+    a span {
+        display: none;
+    }
+
+    .intro {
+        display: grid;
     }
     
-    .navbar a:active {
+    .hi {
         
-        color: var(--orange);
+        width: 22vw;
+        height: 9vh;
+        padding-top: 9vh;
+    }
+
+    .intro .content {
+        grid-column: span 3;
+    }
+
+    .intro .content h1 {
+        
+        font-size: 5rem;
+        
+    }
+
+    .intro .image img {
+        display: none;
+        
+    }
+
+    .intro .content #phonepic {
+        display:contents;
+        
+
+    }
+
+    .intro .content .phonepic img {
+        height: 30vh;
+        width: 30vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    
+    .intro .content p {
+        font-size: 1rem;
     }
     
+    .intro .content .cul {
+        font-size: 1rem;
+    }
+
+    .card .cheader {
+        font-size: 1rem;
+    }
+
+    .contact {
+        margin: 5rem;
+    }
+    
+    .contact .contact-content .p1 {
+        font-size: 1.2rem;
+    }
 }
