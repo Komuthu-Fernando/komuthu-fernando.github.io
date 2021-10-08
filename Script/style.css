@@ -484,6 +484,11 @@ footer.page {
 
 @media only screen and (max-width: 992px) {
 
+    header {
+        backdrop-filter: blur(5px); 
+        -webkit-backdrop-filter: blur(5px);
+    }
+
     .menu .message {
         font-size: 0.8rem;
         margin: 0;
