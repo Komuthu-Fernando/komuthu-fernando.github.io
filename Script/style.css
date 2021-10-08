@@ -477,12 +477,22 @@ footer.page {
 
     .menu .message {
         font-size: 0.8rem;
-        line-height: 5vh;
         margin: 0;
         padding: 0;
         display:inline;
         text-align: center;
     }
+
+    .menu .message h4 {
+        font-size: 1.2rem;
+    }
+
+    #myBtn {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    
 
     .menu .navbar{
         padding-top: 1.5rem;
@@ -497,8 +507,7 @@ footer.page {
         font-size: 1.2rem;
         font-family: var(--mainfont); 
         font-weight: bold;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        min-height: 5vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;       
     
        
     }
@@ -509,9 +518,16 @@ footer.page {
 
     .navbar ul li {
         text-align: center;
+        height: 3.1vh;
+        padding-top: 1rem;
         
     }
 
+    .navbar ul li a {
+        font-size: 1.8rem;
+        padding-top: 2rem;
+
+    }
     a span {
         display: none;
     }
@@ -559,14 +575,30 @@ footer.page {
 
     
     .intro .content p {
-        font-size: 1rem;
+        font-size: 1.8rem;
+        letter-spacing: normal;
+        padding: 0;
+        margin: 3rem;
+        line-height: 3rem;
     }
     
     .intro .content .cul {
         font-size: 1rem;
     }
 
+    .intro .content .cul ul li a i {
+        font-size: 1.8rem;
+    }
+
     .card .cheader {
+        font-size: 1rem;
+    }
+
+    .card .cardname {
+        font-size: 1.5rem;
+    }
+
+    .card main {
         font-size: 1rem;
     }
 
