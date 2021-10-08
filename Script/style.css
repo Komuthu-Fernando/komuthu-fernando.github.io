@@ -77,6 +77,14 @@ header  {
     padding-top: 1.5rem;
 }
 
+.menu .message h4 {
+    text-align: center;
+    grid-area: name;
+    color: white;
+    font-family: var(--menufont);
+    letter-spacing: 25px;
+}
+
 .menu .navbar {
     padding-top: 1.8rem;
     
