@@ -245,7 +245,7 @@ emailjs.init("user_LeKFRL5ZavTE2v1WqPsFF");
                                 <span>Message</span>
                                 <textarea class="contact-message" id="message" placeholder="Your message" name="message" required></textarea>    
                             </div>
-                            <input id="fsubmit" type="submit" name="submit" value="Send">
+                            <input id="fsubmit" type="submit" name="submit" value="Send" onclick="myFunction()">
                         </div>
                     </form>
                 </div> 
@@ -271,6 +271,11 @@ emailjs.init("user_LeKFRL5ZavTE2v1WqPsFF");
                     });
                 });
             </script>
+            <script>
+                function myFunction() {
+                  document.getElementById("form").reset();
+                }
+                </script>
             <footer class="page" style="display: block;"> 
                 <div>© KOMUTHU FERNANDO | ALL RIGHTS RESERVED</div>
             </footer>
