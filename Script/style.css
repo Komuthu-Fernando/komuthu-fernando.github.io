@@ -65,6 +65,7 @@ header  {
     position: sticky;
     top: 0;
     backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px);
     
     
 }
@@ -489,6 +490,7 @@ footer.page {
         padding: 0;
         display:inline;
         text-align: center;
+        padding-top: 0.2rem;
     }
 
     .menu .message h4 {
@@ -496,8 +498,12 @@ footer.page {
     }
 
     #myBtn {
-        width: 5rem;
-        height: 5rem;
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .button i {
+        font-size: 2rem;
     }
 
     
@@ -583,11 +589,11 @@ footer.page {
 
     
     .intro .content p {
-        font-size: 1.8rem;
+        font-size: 2.5rem;
         letter-spacing: normal;
         padding: 0;
         margin: 3rem;
-        line-height: 3rem;
+        line-height: 4rem;
     }
     
     .intro .content .cul {
@@ -598,16 +604,28 @@ footer.page {
         font-size: 1.8rem;
     }
 
+    .web-content .card-container {
+        margin: 0;
+    }
+
     .card .cheader {
         font-size: 1rem;
     }
 
     .card .cardname {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .card main {
+        font-size: 1.3rem;
+    }
+
+    .card .subcardname {
         font-size: 1rem;
+    }
+
+    .contact .contact-content .cul ul li a i {
+        font-size: 1.8rem;
     }
 
     .contact {
@@ -615,6 +633,7 @@ footer.page {
     }
     
     .contact .contact-content .p1 {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
+        line-height: 3rem;
     }
 }
