@@ -232,7 +232,7 @@
                     </div>
                 </div>
                 <div class="form" >
-                    <form action="post" >
+                    <form action="post" id="myform">
                         <div class="form-div"> 
                             <div class="input-box"> 
                                 <span>Email</span>
@@ -246,7 +246,7 @@
                                 <span>Message</span>
                                 <textarea class="contact-message" id="message" placeholder="Your message" name="message" required></textarea>    
                             </div>
-                            <input id="fsubmit" type="submit" name="submit" value="Send" >
+                            <input id="fsubmit" type="submit" name="submit" value="Send" onclick="myFunction()">
                         </div>
                     </form>
                 </div> 
@@ -272,11 +272,11 @@
                     });
                 });
             </script>
-            <!-- <script>
+            <script>
                 function myFunction() {
                   document.getElementById("myform").reset();
                 }
-            </script> -->
+            </script>
             <footer class="page" style="display: block;"> 
                 <div>© KOMUTHU FERNANDO | ALL RIGHTS RESERVED</div>
             </footer>
